@@ -1,3 +1,9 @@
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 body {
     background-color: #ffffff;
 }
@@ -105,6 +111,240 @@ header .bottom > div {
     overflow: auto;
     text-align: center;
     vertical-align: middle;
+}
+
+
+
+.content {
+    margin-left: 390px;
+}
+
+h3 {
+    color: #333333;
+    margin: 0;
+}
+
+.content div span {
+    color: #333333;
+    font-size: 13px;
+    float: left;
+    margin: 5px 5px 0 0;
+}
+
+.content div ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.content div ul li {
+    float: left;
+    list-style: none;
+    border: 2px solid #FFFFFF;
+}
+
+.content div ul li a {
+    -moz-text-decoration-line: underline;
+    -moz-text-decoration-style: dashed;
+    -moz-text-decoration-color: #aec2df;
+    color: #000000;
+    font-size: 12px;
+    padding: 2px 4px;
+    margin: 2px
+}
+
+.content  .active {
+    border: 2px solid #1e57a5;
+    color: #1e57a5;
+    border-radius: 4px;
+}
+
+.box {
+    border: 2px solid #cfcfcf;
+    border-radius: 5px;
+    margin: 10px 0 4px 0;
+    padding: 14px 17px;
+    width: 712px;
+    height: 223px;
+}
+
+.box_name span a {
+    color: #1e57a5;
+    -moz-text-decoration-line: underline;
+    -moz-text-decoration-style: solid;
+    -moz-text-decoration-color: #aec2df;
+    font-size: 18px;
+}
+
+.box_name img {
+    margin-left: 10px;
+}
+
+.category {
+    float: right;
+    font-size: 11px;
+    color: #775843;
+    background-color: #fef0d3;
+    width: 242px;
+    padding: 7px 0 8px 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.strip {
+    color: #deccb4;
+    padding: 0 4px 0 4px ;
+}
+
+.lux {
+    padding-left: 20px;
+}
+
+.star {
+    display: inline-block;
+    background-image: url("../icons/star.png");
+    height: 16px;
+}
+
+.star .star_full {
+    display: inline-block;
+    background-image: url("../icons/star_full.png");
+    height: 16px;
+}
+
+.rating {
+    font-size: 12px;
+}
+
+.box .pic ul li{
+    list-style: none;
+    float: left;
+}
+.box .pic ul {
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.box .pic ul li a img {
+    margin: 0 7px 0 0;
+}
+
+.rooms {
+    height: 115px;
+    padding-left: 10px;
+}
+
+.column, .column1 {
+    width: 205px;
+    height: 18px;
+    display: inline-block;
+    font-size: 10px;
+    padding: 5px 0 0 17px;
+}
+
+.column1 {
+    background-color: #f4f4f4;
+}
+
+.column {
+    background-color: #ffffff;
+}
+
+.mean b{
+    width: 110px;
+    display: inline-block;
+}
+
+.button {
+    margin-top: 10px;
+}
+
+.button div {
+    float: left;
+}
+
+.reviews {
+    margin-top: 5px;
+}
+
+.number {
+    margin-top: 5px;
+}
+
+.reviews span, .reviews span a{
+    color: #1e57a5;
+}
+
+.number span, .number span a {
+    color: #f37d20;
+}
+
+.reviews span b , .number span b {
+    font-size: 12px;
+
+}
+
+.reviews .num a b  {
+    /* font-size: 15px;*/
+    display: inline-block;
+    text-decoration: underline dashed #aec2df;
+    background-image: url("../icons/coments-bg.png");
+    height: 22px;
+    width: 57px;
+    text-align: center;
+    padding: 8px 0 0 0;
+}
+
+.number .num a b {
+    display: inline-block;
+    text-decoration: none;
+    background-image: url("../icons/coments-bg.png");
+    height: 22px;
+    width: 57px;
+    text-align: center;
+    padding: 8px 0 0 0;
+}
+
+.button .strip {
+    margin: 10px 15px 0 15px;
+}
+
+.button .icons {
+    margin: 12px 10px 0 0;
+}
+
+.submit {
+    margin-left: 90px;
+}
+
+.submit div b {
+    color: #f37d20;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+.submit button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 9px 12px;
+    background: -moz-linear-gradient(
+            top,
+            #3f79cb 0%,
+            #2059a8);
+    background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#3f79cb),
+            to(#2059a8));
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 0 solid #000000;
+    margin-left: 13px;
+    text-transform: uppercase;
 }
 
 .bottom ul{
