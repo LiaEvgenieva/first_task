@@ -1,0 +1,226 @@
+body {
+    background-color: #ffffff;
+}
+
+header .top {
+    height: 77px;
+    background-image: url("../icons/header-bg.png");
+    background-repeat: repeat-x;
+    text-align: center;
+}
+
+header .top .logo {
+    position: relative;
+    margin-top: 19px;
+    display: inline-block;
+}
+
+header .top .logo span {
+    color: #666666;
+    font-size: 10px;
+    position: absolute;
+    bottom: 3px;
+    right: 0;
+}
+
+header .top .logo a{
+    text-decoration: none;
+}
+
+header .cabinet {
+    margin: 30px 70px 0 370px;
+}
+
+header .region {
+    padding: 0 0 0 20px;
+    border-left: 1px solid #e8e8e8;
+	display: inline-block;
+	height: 47px;
+	vertical-align: middle;
+}
+
+header .region a i {
+    color: #3257a5;
+    font-size: 14px;
+    border-bottom: 1px dashed #3257a5;
+    width: 120px;
+    font-weight: bold;
+}
+
+header .region a {
+    text-decoration: none;
+}
+
+header .region span {
+    color: #7b8ea9;
+    font-size: 11px;
+}
+
+header .cabinet {
+	display: inline-block;
+	height: 47px;
+	vertical-align: middle;
+	margin: 0 70px 0 370px;
+}
+
+.registration, .login {
+    text-decoration: none;
+}
+
+.registration img, .login img {
+	vertical-align: middle;
+}
+
+.registration span {
+    color: #333333;
+    font-size: 14px;
+    border-bottom: 1px solid #cccccc;
+    margin-right: 23px;
+    display: inline-block;
+    width: 90px;
+    font-weight: bold;
+}
+.login span{
+    color: #333333;
+    font-size: 14px;
+    border-bottom: 1px solid #cccccc;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.cabinet a:hover span {
+    border: none;
+}
+
+header .bottom {
+    height: 100px;
+    background-image: url("../icons/header.png");
+    background-repeat: repeat-x;
+}
+
+header .bottom > div {
+    clear: both;
+    height: 110px;
+    line-height: 50px;
+    overflow: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.bottom ul{
+    display: inline-block;
+}
+
+header .bottom ul li, footer .top .menu li {
+    list-style: none;
+    display: inline;
+}
+
+header .bottom ul li a, footer .top .menu li {
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, .3);
+    text-transform: uppercase;
+    border-radius: 5px;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+
+	-webkit-transition-property: background;
+	-o-transition-property: background;
+	-moz-transition-property: background;
+	transition-property: background;
+}
+
+header .bottom ul li a {
+    font-size: 12px;
+    padding: 15px 12px 12px 12px;
+    margin-left: 15px;
+}
+
+header .bottom ul li a, footer .menu li a {
+    font-weight: 800;
+}
+
+header .bottom ul li a:hover, header .bottom ul li.active a, footer .menu li:hover, footer .menu li.active {
+    background: #f37d20;
+}
+
+main {
+
+}
+
+footer .top {
+    height: 90px;
+    background-color: #1e57a5;
+    text-align: center;
+}
+
+footer .top div {
+    display: inline;
+}
+
+footer .top .logo {
+    position: relative;
+    margin-right: 80px;
+}
+
+footer .top .logo a span {
+    color: #ffffff;
+    font-size: 10px;
+    position: absolute;
+    bottom: 5px;
+    right: 4px;
+    top: 0;
+}
+
+footer .top .logo a{
+    text-decoration: none;
+}
+
+footer .top .menu {
+    display: inline;
+    padding-left: 0;
+    margin: 0;
+}
+
+footer .top .menu li {
+    font-size: 10px;
+    padding: 15px 5px 12px 5px;
+    margin: 0 0 0 10px;
+}
+
+footer .top .menu li a {
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, .3);
+    text-transform: uppercase;
+}
+
+footer .bottom {
+    height: 47px;
+    background-color: #174583;
+    text-align: center;
+}
+
+
+footer .bottom .copyright {
+    color: #799fd4;
+    font-size: 10px;
+}
+
+footer .bottom .search {
+    padding: 0 22px 0 10px;
+    margin: 13px 0 0 600px;
+    width: 140px;
+    font-size: 11px;
+    height: 19px;
+    color: #a7a7a7;
+    border: 1px solid #d1dae6;
+    border-radius: 4px
+}
+
+footer .bottom .button {
+
+}
