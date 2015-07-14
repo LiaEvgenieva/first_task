@@ -6,6 +6,7 @@
 
 body {
     background-color: #ffffff;
+    min-width: 1090px;
 }
 
 header .top {
@@ -39,7 +40,6 @@ header .cabinet {
 
 header .region {
     padding: 0 0 0 20px;
-    border-left: 1px solid #e8e8e8;
 	display: inline-block;
 	height: 47px;
 	vertical-align: middle;
@@ -86,6 +86,7 @@ header .cabinet {
     width: 90px;
     font-weight: bold;
 }
+
 .login span{
     color: #333333;
     font-size: 14px;
@@ -113,22 +114,84 @@ header .bottom > div {
     vertical-align: middle;
 }
 
-
-
-.content {
-    margin-left: 390px;
+header .bottom ul li, footer .top .menu li {
+    list-style: none;
+    display: inline;
 }
 
-h3 {
+header .bottom ul li a, footer .top .menu li {
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, .3);
+    text-transform: uppercase;
+    border-radius: 5px;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+	-webkit-transition-property: background;
+	-o-transition-property: background;
+	-moz-transition-property: background;
+	transition-property: background;
+}
+
+header .bottom ul li a {
+    font-size: 12px;
+    padding: 15px 12px 12px 12px;
+    margin-left: 15px;
+}
+
+header .bottom ul li a, footer .menu li a {
+    font-weight: 800;
+}
+
+header .bottom ul li a:hover, header .bottom ul li.active a, footer .menu li:hover, footer .menu li.active {
+    background: #f37d20;
+}
+
+main {
+
+}
+
+.left-side {
+    width: 226px;
+    height: 1210px;
+    background-color: #333333;
+    float: left;
+}
+
+.sidebar {
+    width: 226px;
+    height: 919px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+
+
+.line {
+    background: url("../icons/left-line.png");
+    height: 2px;
+    margin: 19px auto;
+    background-repeat: repeat-x;
+    width: 189px;
+
+}
+
+h2 {
     color: #333333;
     margin: 0;
 }
 
-.content div span {
+.content{
+    float: left;
+}
+
+.content div .reg {
     color: #333333;
     font-size: 13px;
-    float: left;
     margin: 5px 5px 0 0;
+    font-weight: bold;
 }
 
 .content div ul {
@@ -138,22 +201,24 @@ h3 {
 }
 
 .content div ul li {
-    float: left;
+    display: inline-block;
     list-style: none;
     border: 2px solid #FFFFFF;
 }
 
-.content div ul li a {
+.content div ul li a{
     -moz-text-decoration-line: underline;
     -moz-text-decoration-style: dashed;
     -moz-text-decoration-color: #aec2df;
     color: #000000;
     font-size: 12px;
     padding: 2px 4px;
-    margin: 2px
+    margin: 2px;
+    vertical-align: middle;
+    display: inline-block;
 }
 
-.content  .active {
+.content div .active{
     border: 2px solid #1e57a5;
     color: #1e57a5;
     border-radius: 4px;
@@ -180,8 +245,11 @@ h3 {
     margin-left: 10px;
 }
 
+.box_name .loc {
+    text-decoration: none;
+}
+
 .category {
-    float: right;
     font-size: 11px;
     color: #775843;
     background-color: #fef0d3;
@@ -190,6 +258,7 @@ h3 {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    margin-left: 243px;
 }
 
 .strip {
@@ -197,7 +266,16 @@ h3 {
     padding: 0 4px 0 4px ;
 }
 
+.nom {
+    padding-right: 10px;
+}
+
 .lux {
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.category .lux {
     padding-left: 20px;
 }
 
@@ -210,29 +288,40 @@ h3 {
 .star .star_full {
     display: inline-block;
     background-image: url("../icons/star_full.png");
-    height: 16px;
+    height: 14px;
+    margin-top: 0;
 }
 
 .rating {
     font-size: 12px;
 }
 
-.box .pic ul li{
-    list-style: none;
+.content .pic {
     float: left;
-}
-.box .pic ul {
-    padding: 0;
-    margin: 10px 0 0 0;
+    margin-top: 10px;
 }
 
-.box .pic ul li a img {
+.content .pic ul li{
+    list-style: none;
+    float: left;
     margin: 0 7px 0 0;
+    padding: 0;
+    border: 0;
+}
+
+.content .pic ul li a {
+    margin: 0;
+    padding: 0;
+}
+
+.content .pic ul {
+    padding: 0;
+    margin: 0;
 }
 
 .rooms {
-    height: 115px;
     padding-left: 10px;
+    margin-top: 9px;
 }
 
 .column, .column1 {
@@ -256,23 +345,15 @@ h3 {
     display: inline-block;
 }
 
-.button {
-    margin-top: 10px;
-}
-
-.button div {
-    float: left;
+.reviews {
+    margin-top: 5px;
 }
 
 .reviews {
     margin-top: 5px;
 }
 
-.number {
-    margin-top: 5px;
-}
-
-.reviews span, .reviews span a{
+.reviews span, .reviews span a {
     color: #1e57a5;
 }
 
@@ -314,19 +395,20 @@ h3 {
     margin: 12px 10px 0 0;
 }
 
-.submit {
-    margin-left: 90px;
-}
-
-.submit div b {
+.submit span b {
     color: #f37d20;
-    display: inline-block;
-    margin-top: 10px;
+    margin: 10px 0 0 63px;
     font-size: 16px;
 }
 
+.submit del {
+    color: #f37d20;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
 
-.submit button {
+.submit button, .sidebar button {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #ffffff;
@@ -343,53 +425,13 @@ h3 {
     -webkit-border-radius: 5px;
     border-radius: 5px;
     border: 0 solid #000000;
-    margin-left: 13px;
+    margin-left: 7px;
     text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
-.bottom ul{
-    display: inline-block;
-}
 
-header .bottom ul li, footer .top .menu li {
-    list-style: none;
-    display: inline;
-}
-
-header .bottom ul li a, footer .top .menu li {
-    color: #ffffff;
-    text-decoration: underline;
-    text-decoration-color: rgba(255, 255, 255, .3);
-    text-transform: uppercase;
-    border-radius: 5px;
-    -webkit-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-
-	-webkit-transition-property: background;
-	-o-transition-property: background;
-	-moz-transition-property: background;
-	transition-property: background;
-}
-
-header .bottom ul li a {
-    font-size: 12px;
-    padding: 15px 12px 12px 12px;
-    margin-left: 15px;
-}
-
-header .bottom ul li a, footer .menu li a {
-    font-weight: 800;
-}
-
-header .bottom ul li a:hover, header .bottom ul li.active a, footer .menu li:hover, footer .menu li.active {
-    background: #f37d20;
-}
-
-main {
-
-}
 
 footer .top {
     height: 90px;
@@ -444,10 +486,14 @@ footer .bottom {
     text-align: center;
 }
 
-
 footer .bottom .copyright {
     color: #799fd4;
     font-size: 10px;
+}
+
+footer .bottom form {
+    display: inline;
+    position: relative;
 }
 
 footer .bottom .search {
@@ -458,9 +504,17 @@ footer .bottom .search {
     height: 19px;
     color: #a7a7a7;
     border: 1px solid #d1dae6;
-    border-radius: 4px
+    border-radius: 4px;
 }
 
 footer .bottom .button {
-
+    background-image: url("../icons/serch.png");
+    border:none;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 7px;
+    top: 3px;
 }

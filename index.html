@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head lang="en">
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/Normalize.css">
@@ -55,37 +55,181 @@
     </div>
 </header>
 <main>
-    <div class="left-side">
+    <aside class="left-side">
+        <form class="sidebar">
+            <div>
+                <span>Бюджет</span>
+                <input type="text" value="20000" name="price">
+                <span>руб.</span>
+                <span>Общая стоимость за период</span>
+            </div>
+            <div class="line"></div>
+            <div>
+                <span>Параметры</span>
+                <div>
+                    <div>Кол-во комнат:</div>
+                    <div>
+                        <select>
+                            <option value="1" selected="selected">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div>Кол-во гостей:</div>
+                    <div>
+                        <select>
+                            <option value="1" selected="selected">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" value="1" name="loggia">
+                    <span class="label">Балкон, лоджия</span>
+                </div>
+                <div>
+                    <div>Дата заезда:</div>
+                    <select>
 
-    </div>
-    <div class="content">
+                    </select>
+                </div>
+                <div>
+                    <div>Дата выезда:</div>
+                    <select>
+
+                    </select>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div>
+                <div>
+                    <div>Услуги</div>
+                    <div>
+                        <input type="checkbox" value="1">
+                        <span class="label">Питание</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="1">
+                        <span class="label">Бассейн</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="1">
+                        <span class="label">Cауна</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="1">
+                        <span class="label">Спорт</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="1">
+                        <span class="label">Детская площадка</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="1">
+                        <span class="label">Автостоянка</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="1">
+                        <span class="label">Конференц-зал</span>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div>
+                <div>Типы размещения </div>
+                <div>
+                    <input type="checkbox" value="1">
+                    <span class="label">Санаторий</span>
+                </div>
+                <div>
+                    <input type="checkbox" value="1">
+                    <span class="label">Пансионаты</span>
+                </div>
+                <div>
+                    <input type="checkbox" value="1">
+                    <span class="label">Дома отдыха</span>
+                </div>
+                <div>
+                    <input type="checkbox" value="1">
+                    <span class="label">Гостинницы</span>
+                </div>
+                <div>
+                    <input type="checkbox" value="1">
+                    <span class="label">Котеджи</span>
+                </div>
+                <div>
+                    <input type="checkbox" value="1">
+                    <span class="label">Кваритиры</span>
+                </div>
+                <div>
+                    <input type="checkbox" value="1">
+                    <span class="label">Кемпинги</span>
+                </div>
+                <div>
+                    <input type="checkbox" value="1">
+                    <span class="label">Яхты</span>
+                </div>
+            </div>
+            <div class="line"></div>
+            <button>подобрать</button>
+        </form>
+        <div class="map">
+        </div>
+    </aside>
+    <div class="content clearfix">
         <div>
-            <h3>
+            <h2>
                 Гостиницы, отели
-            </h3>
-            <span>
+            </h2>
+            <span class="reg">
                 Упорядочить по:
             </span>
-            <ul>
-                <li class="active"><a href="#">Стоимости</a></li>
-                <li><a href="#">Рейтингу</a></li>
-                <li><a href="#">Ближайшие</a></li>
-            </ul>
+                <ul>
+                    <li class="active"><a href="#">Стоимости</a></li>
+                    <li><a href="#">Рейтингу</a></li>
+                    <li><a href="#">Ближайшие</a></li>
+                </ul>
         </div>
         <div class="box">
             <div class="box_name">
                 <span>
-                    <a href="#">Гостиница "Ласточка"</a>
+                    <a href="#"><b>Гостиница "Ласточка"</b></a>
                 </span>
-            <a href="#">
-                <img src="icons/location.png">
-            </a>
+                <a href="#" class="loc">
+                    <img src="icons/location.png">
+                </a>
                 <span class="category">
                     <span class="lux">Полулюку №25</span>
                     <span class="strip">|</span>
-                    <span>Все варианты(15шт)</span>
+                    <span class="nom">Все варианты(15шт)</span>
                 </span>
-            <br>
+                <br>
                 <span class="rating">
                     <b>Рейтинг:</b> +4,5
                     <span class="star" style="width: 80px;">
@@ -93,81 +237,638 @@
                     </span>
                 </span>
             </div>
-        </div>
-        <div class="pic">
-            <ul>
-                <li><a href="#"><img src="images/rixos.jpg"></a></li>
-                <li><a href="#"><img src="images/house.jpg"></a></li>
-                <li><a href="#"><img src="images/sky.jpg"></a></li>
-                <li><a href="#"><img src="images/winter.jpg"></a></li>
-            </ul>
-        </div>
-        <div class="rooms">
-            <span class="column1">
-                <span class="mean">Комнат (спален):
-                    <span class="value">1</span>
-                </span>
-            </span>
-            <br>
-            <span class="column">
-                <span class="mean">Балкон/лоджия:
-                    <span class="value">да
+            <div class="pic">
+                <ul>
+                    <li><a href="#"><img src="images/rixos.jpg"></a></li>
+                    <li><a href="#"><img src="images/house.jpg"></a></li>
+                    <li><a href="#"><img src="images/sky.jpg"></a></li>
+                    <li><a href="#"><img src="images/winter.jpg"></a></li>
+                </ul>
+            </div>
+            <div class="rooms clearfix">
+                <span class="column1">
+                    <span class="mean"><b>Комнат (спален):</b>
+                        <span class="value">1</span>
                     </span>
                 </span>
-            </span>
-            <br>
-            <span class="column1">
-                <span class="mean">Кол-во гостей:
-                    <span class="value">2</span>
+                <br>
+                <span class="column">
+                    <span class="mean"><b>Балкон/лоджия:</b>
+                        <span class="value">да
+                        </span>
+                    </span>
                 </span>
-            </span>
-            <br>
-            <span class="column">
-                <span class="mean">Дата заезда:
-                    <span class="value">01.07.2015</span>
+                <br>
+                <span class="column1">
+                    <span class="mean"><b>Кол-во гостей:</b>
+                        <span class="value">2</span>
+                    </span>
                 </span>
-            </span>
-            <br>
-            <span class="column1">
-                <span class="mean">Дата выезда:
-                    <span class="value">10.07.2015</span>
+                <br>
+                <span class="column">
+                    <span class="mean"><b>Дата заезда:</b>
+                        <span class="value">01.07.2015</span>
+                    </span>
                 </span>
-            </span>
-            <div style="clear: both"></div>
+                <br>
+                <span class="column1">
+                    <span class="mean"><b>Дата выезда:</b>
+                        <span class="value">10.07.2015</span>
+                    </span>
+                </span>
+            </div>
+            <div class="button">
+                <span class="reviews">
+                    <span class="num">
+                        <a href="#"><b>138</b></a>
+                    </span>
+                    <span><b>Отзывы</b></span>
+                </span>
+                <span class="strip">|</span>
+                <span class="number">
+                    <span class="num">
+                        <a href="#"><b>100</b></a>
+                    </span>
+                    <span><b>Номеров</b></span>
+                </span>
+                <span class="strip">|</span>
+                <span class="icons">
+                    <img src="icons/food.png">
+                    <img src="icons/swim.png">
+                    <img src="icons/parking.png">
+                    <img src="icons/sport.png">
+                </span>
+                <span class="submit">
+                    <span>
+                        <b>100 000</b>
+                            <del>
+                                <span style="font-family: Arial; font-size: 12.0pt;">P</span>
+                            </del>
+                    </span>
+                    <button>Бронировать</button>
+                </span>
+            </div>
         </div>
-        <div class="button">
-            <span class="reviews">
-                <span class="num">
-                    <a href="#">138</a>
+        <div class="box">
+            <div class="box_name">
+                <span>
+                    <a href="#"><b>Гостиница "Ласточка"</b></a>
                 </span>
-                <span>Отзывы</span>
-            </span>
-            <span class="strip">|</span>
-            <span class="number">
-                <span class="num">
-                    <a href="#">100
-                    </a>
+                <a href="#" class="loc">
+                    <img src="icons/location.png">
+                </a>
+                <span class="category">
+                    <span class="lux">Полулюку №25</span>
+                    <span class="strip">|</span>
+                    <span class="nom">Все варианты(15шт)</span>
                 </span>
-                <span>Номеров</span>
-            </span>
-            <span class="strip">|</span>
-            <span class="icons">
-                <img src="icons/food.png">
-                <img src="icons/swim.png">
-                <img src="icons/parking.png">
-                <img src="icons/sport.png">
-            </span>
-            <div class="submit">
-                <div>
-                    100 000
-                        <del>
-                            <span style="font-family: Arial; font-size: 12.0pt;">P</span>
-                        </del>
-                </div>
-                <button>Бронировать</button>
+                <br>
+                <span class="rating">
+                    <b>Рейтинг:</b> +4,5
+                    <span class="star" style="width: 80px;">
+                        <span class="star_full" style="width: 56px;"></span>
+                    </span>
+                </span>
+            </div>
+            <div class="pic">
+                <ul>
+                    <li><a href="#"><img src="images/rixos.jpg"></a></li>
+                    <li><a href="#"><img src="images/house.jpg"></a></li>
+                    <li><a href="#"><img src="images/sky.jpg"></a></li>
+                    <li><a href="#"><img src="images/winter.jpg"></a></li>
+                </ul>
+            </div>
+            <div class="rooms clearfix">
+                <span class="column1">
+                    <span class="mean"><b>Комнат (спален):</b>
+                        <span class="value">1</span>
+                    </span>
+                </span>
+                <br>
+                <span class="column">
+                    <span class="mean"><b>Балкон/лоджия:</b>
+                        <span class="value">да
+                        </span>
+                    </span>
+                </span>
+                <br>
+                <span class="column1">
+                    <span class="mean"><b>Кол-во гостей:</b>
+                        <span class="value">2</span>
+                    </span>
+                </span>
+                <br>
+                <span class="column">
+                    <span class="mean"><b>Дата заезда:</b>
+                        <span class="value">01.07.2015</span>
+                    </span>
+                </span>
+                <br>
+                <span class="column1">
+                    <span class="mean"><b>Дата выезда:</b>
+                        <span class="value">10.07.2015</span>
+                    </span>
+                </span>
+            </div>
+            <div class="button">
+                <span class="reviews">
+                    <span class="num">
+                        <a href="#"><b>138</b></a>
+                    </span>
+                    <span><b>Отзывы</b></span>
+                </span>
+                <span class="strip">|</span>
+                <span class="number">
+                    <span class="num">
+                        <a href="#"><b>100</b></a>
+                    </span>
+                    <span><b>Номеров</b></span>
+                </span>
+                <span class="strip">|</span>
+                <span class="icons">
+                    <img src="icons/food.png">
+                    <img src="icons/swim.png">
+                    <img src="icons/parking.png">
+                    <img src="icons/sport.png">
+                </span>
+                <span class="submit">
+                    <span>
+                        <b>100 000</b>
+                            <del>
+                                <span style="font-family: Arial; font-size: 12.0pt;">P</span>
+                            </del>
+                    </span>
+                    <button>Бронировать</button>
+                </span>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box_name">
+                <span>
+                    <a href="#"><b>Гостиница "Ласточка"</b></a>
+                </span>
+                <a href="#" class="loc">
+                    <img src="icons/location.png">
+                </a>
+                <span class="category">
+                    <span class="lux">Полулюку №25</span>
+                    <span class="strip">|</span>
+                    <span class="nom">Все варианты(15шт)</span>
+                </span>
+                <br>
+                <span class="rating">
+                    <b>Рейтинг:</b> +4,5
+                    <span class="star" style="width: 80px;">
+                        <span class="star_full" style="width: 56px;"></span>
+                    </span>
+                </span>
+            </div>
+            <div class="pic">
+                <ul>
+                    <li><a href="#"><img src="images/rixos.jpg"></a></li>
+                    <li><a href="#"><img src="images/house.jpg"></a></li>
+                    <li><a href="#"><img src="images/sky.jpg"></a></li>
+                    <li><a href="#"><img src="images/winter.jpg"></a></li>
+                </ul>
+            </div>
+            <div class="rooms clearfix">
+                <span class="column1">
+                    <span class="mean"><b>Комнат (спален):</b>
+                        <span class="value">1</span>
+                    </span>
+                </span>
+                <br>
+                <span class="column">
+                    <span class="mean"><b>Балкон/лоджия:</b>
+                        <span class="value">да
+                        </span>
+                    </span>
+                </span>
+                <br>
+                <span class="column1">
+                    <span class="mean"><b>Кол-во гостей:</b>
+                        <span class="value">2</span>
+                    </span>
+                </span>
+                <br>
+                <span class="column">
+                    <span class="mean"><b>Дата заезда:</b>
+                        <span class="value">01.07.2015</span>
+                    </span>
+                </span>
+                <br>
+                <span class="column1">
+                    <span class="mean"><b>Дата выезда:</b>
+                        <span class="value">10.07.2015</span>
+                    </span>
+                </span>
+            </div>
+            <div class="button">
+                <span class="reviews">
+                    <span class="num">
+                        <a href="#"><b>138</b></a>
+                    </span>
+                    <span><b>Отзывы</b></span>
+                </span>
+                <span class="strip">|</span>
+                <span class="number">
+                    <span class="num">
+                        <a href="#"><b>100</b></a>
+                    </span>
+                    <span><b>Номеров</b></span>
+                </span>
+                <span class="strip">|</span>
+                <span class="icons">
+                    <img src="icons/food.png">
+                    <img src="icons/swim.png">
+                    <img src="icons/parking.png">
+                    <img src="icons/sport.png">
+                </span>
+                <span class="submit">
+                    <span>
+                        <b>100 000</b>
+                            <del>
+                                <span style="font-family: Arial; font-size: 12.0pt;">P</span>
+                            </del>
+                    </span>
+                    <button>Бронировать</button>
+                </span>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box_name">
+                <span>
+                    <a href="#"><b>Гостиница "Ласточка"</b></a>
+                </span>
+                <a href="#" class="loc">
+                    <img src="icons/location.png">
+                </a>
+                <span class="category">
+                    <span class="lux">Полулюку №25</span>
+                    <span class="strip">|</span>
+                    <span class="nom">Все варианты(15шт)</span>
+                </span>
+                <br>
+                <span class="rating">
+                    <b>Рейтинг:</b> +4,5
+                    <span class="star" style="width: 80px;">
+                        <span class="star_full" style="width: 56px;"></span>
+                    </span>
+                </span>
+            </div>
+            <div class="pic">
+                <ul>
+                    <li><a href="#"><img src="images/rixos.jpg"></a></li>
+                    <li><a href="#"><img src="images/house.jpg"></a></li>
+                    <li><a href="#"><img src="images/sky.jpg"></a></li>
+                    <li><a href="#"><img src="images/winter.jpg"></a></li>
+                </ul>
+            </div>
+            <div class="rooms clearfix">
+                <span class="column1">
+                    <span class="mean"><b>Комнат (спален):</b>
+                        <span class="value">1</span>
+                    </span>
+                </span>
+                <br>
+                <span class="column">
+                    <span class="mean"><b>Балкон/лоджия:</b>
+                        <span class="value">да
+                        </span>
+                    </span>
+                </span>
+                <br>
+                <span class="column1">
+                    <span class="mean"><b>Кол-во гостей:</b>
+                        <span class="value">2</span>
+                    </span>
+                </span>
+                <br>
+                <span class="column">
+                    <span class="mean"><b>Дата заезда:</b>
+                        <span class="value">01.07.2015</span>
+                    </span>
+                </span>
+                <br>
+                <span class="column1">
+                    <span class="mean"><b>Дата выезда:</b>
+                        <span class="value">10.07.2015</span>
+                    </span>
+                </span>
+            </div>
+            <div class="button">
+                <span class="reviews">
+                    <span class="num">
+                        <a href="#"><b>138</b></a>
+                    </span>
+                    <span><b>Отзывы</b></span>
+                </span>
+                <span class="strip">|</span>
+                <span class="number">
+                    <span class="num">
+                        <a href="#"><b>100</b></a>
+                    </span>
+                    <span><b>Номеров</b></span>
+                </span>
+                <span class="strip">|</span>
+                <span class="icons">
+                    <img src="icons/food.png">
+                    <img src="icons/swim.png">
+                    <img src="icons/parking.png">
+                    <img src="icons/sport.png">
+                </span>
+                <span class="submit">
+                    <span>
+                        <b>100 000</b>
+                            <del>
+                                <span style="font-family: Arial; font-size: 12.0pt;">P</span>
+                            </del>
+                    </span>
+                    <button>Бронировать</button>
+                </span>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box_name">
+                <span>
+                    <a href="#"><b>Гостиница "Ласточка"</b></a>
+                </span>
+                <a href="#" class="loc">
+                    <img src="icons/location.png">
+                </a>
+                <span class="category">
+                    <span class="lux">Полулюку №25</span>
+                    <span class="strip">|</span>
+                    <span class="nom">Все варианты(15шт)</span>
+                </span>
+                <br>
+                <span class="rating">
+                    <b>Рейтинг:</b> +4,5
+                    <span class="star" style="width: 80px;">
+                        <span class="star_full" style="width: 56px;"></span>
+                    </span>
+                </span>
+            </div>
+            <div class="pic">
+                <ul>
+                    <li><a href="#"><img src="images/rixos.jpg"></a></li>
+                    <li><a href="#"><img src="images/house.jpg"></a></li>
+                    <li><a href="#"><img src="images/sky.jpg"></a></li>
+                    <li><a href="#"><img src="images/winter.jpg"></a></li>
+                </ul>
+            </div>
+            <div class="rooms clearfix">
+                <span class="column1">
+                    <span class="mean"><b>Комнат (спален):</b>
+                        <span class="value">1</span>
+                    </span>
+                </span>
+                <br>
+                <span class="column">
+                    <span class="mean"><b>Балкон/лоджия:</b>
+                        <span class="value">да
+                        </span>
+                    </span>
+                </span>
+                <br>
+                <span class="column1">
+                    <span class="mean"><b>Кол-во гостей:</b>
+                        <span class="value">2</span>
+                    </span>
+                </span>
+                <br>
+                <span class="column">
+                    <span class="mean"><b>Дата заезда:</b>
+                        <span class="value">01.07.2015</span>
+                    </span>
+                </span>
+                <br>
+                <span class="column1">
+                    <span class="mean"><b>Дата выезда:</b>
+                        <span class="value">10.07.2015</span>
+                    </span>
+                </span>
+            </div>
+            <div class="button">
+                <span class="reviews">
+                    <span class="num">
+                        <a href="#"><b>138</b></a>
+                    </span>
+                    <span><b>Отзывы</b></span>
+                </span>
+                <span class="strip">|</span>
+                <span class="number">
+                    <span class="num">
+                        <a href="#"><b>100</b></a>
+                    </span>
+                    <span><b>Номеров</b></span>
+                </span>
+                <span class="strip">|</span>
+                <span class="icons">
+                    <img src="icons/food.png">
+                    <img src="icons/swim.png">
+                    <img src="icons/parking.png">
+                    <img src="icons/sport.png">
+                </span>
+                <span class="submit">
+                    <span>
+                        <b>100 000</b>
+                            <del>
+                                <span style="font-family: Arial; font-size: 12.0pt;">P</span>
+                            </del>
+                    </span>
+                    <button>Бронировать</button>
+                </span>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box_name">
+                <span>
+                    <a href="#"><b>Гостиница "Ласточка"</b></a>
+                </span>
+                <a href="#" class="loc">
+                    <img src="icons/location.png">
+                </a>
+                <span class="category">
+                    <span class="lux">Полулюку №25</span>
+                    <span class="strip">|</span>
+                    <span class="nom">Все варианты(15шт)</span>
+                </span>
+                <br>
+                <span class="rating">
+                    <b>Рейтинг:</b> +4,5
+                    <span class="star" style="width: 80px;">
+                        <span class="star_full" style="width: 56px;"></span>
+                    </span>
+                </span>
+            </div>
+            <div class="pic">
+                <ul>
+                    <li><a href="#"><img src="images/rixos.jpg"></a></li>
+                    <li><a href="#"><img src="images/house.jpg"></a></li>
+                    <li><a href="#"><img src="images/sky.jpg"></a></li>
+                    <li><a href="#"><img src="images/winter.jpg"></a></li>
+                </ul>
+            </div>
+            <div class="rooms clearfix">
+                <span class="column1">
+                    <span class="mean"><b>Комнат (спален):</b>
+                        <span class="value">1</span>
+                    </span>
+                </span>
+                <br>
+                <span class="column">
+                    <span class="mean"><b>Балкон/лоджия:</b>
+                        <span class="value">да
+                        </span>
+                    </span>
+                </span>
+                <br>
+                <span class="column1">
+                    <span class="mean"><b>Кол-во гостей:</b>
+                        <span class="value">2</span>
+                    </span>
+                </span>
+                <br>
+                <span class="column">
+                    <span class="mean"><b>Дата заезда:</b>
+                        <span class="value">01.07.2015</span>
+                    </span>
+                </span>
+                <br>
+                <span class="column1">
+                    <span class="mean"><b>Дата выезда:</b>
+                        <span class="value">10.07.2015</span>
+                    </span>
+                </span>
+            </div>
+            <div class="button">
+                <span class="reviews">
+                    <span class="num">
+                        <a href="#"><b>138</b></a>
+                    </span>
+                    <span><b>Отзывы</b></span>
+                </span>
+                <span class="strip">|</span>
+                <span class="number">
+                    <span class="num">
+                        <a href="#"><b>100</b></a>
+                    </span>
+                    <span><b>Номеров</b></span>
+                </span>
+                <span class="strip">|</span>
+                <span class="icons">
+                    <img src="icons/food.png">
+                    <img src="icons/swim.png">
+                    <img src="icons/parking.png">
+                    <img src="icons/sport.png">
+                </span>
+                <span class="submit">
+                    <span>
+                        <b>100 000</b>
+                            <del>
+                                <span style="font-family: Arial; font-size: 12.0pt;">P</span>
+                            </del>
+                    </span>
+                    <button>Бронировать</button>
+                </span>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box_name">
+                <span>
+                    <a href="#"><b>Гостиница "Ласточка"</b></a>
+                </span>
+                <a href="#" class="loc">
+                    <img src="icons/location.png">
+                </a>
+                <span class="category">
+                    <span class="lux">Полулюку №25</span>
+                    <span class="strip">|</span>
+                    <span class="nom">Все варианты(15шт)</span>
+                </span>
+                <br>
+                <span class="rating">
+                    <b>Рейтинг:</b> +4,5
+                    <span class="star" style="width: 80px;">
+                        <span class="star_full" style="width: 56px;"></span>
+                    </span>
+                </span>
+            </div>
+            <div class="pic">
+                <ul>
+                    <li><a href="#"><img src="images/rixos.jpg"></a></li>
+                    <li><a href="#"><img src="images/house.jpg"></a></li>
+                    <li><a href="#"><img src="images/sky.jpg"></a></li>
+                    <li><a href="#"><img src="images/winter.jpg"></a></li>
+                </ul>
+            </div>
+            <div class="rooms clearfix">
+                <span class="column1">
+                    <span class="mean"><b>Комнат (спален):</b>
+                        <span class="value">1</span>
+                    </span>
+                </span>
+                <br>
+                <span class="column">
+                    <span class="mean"><b>Балкон/лоджия:</b>
+                        <span class="value">да
+                        </span>
+                    </span>
+                </span>
+                <br>
+                <span class="column1">
+                    <span class="mean"><b>Кол-во гостей:</b>
+                        <span class="value">2</span>
+                    </span>
+                </span>
+                <br>
+                <span class="column">
+                    <span class="mean"><b>Дата заезда:</b>
+                        <span class="value">01.07.2015</span>
+                    </span>
+                </span>
+                <br>
+                <span class="column1">
+                    <span class="mean"><b>Дата выезда:</b>
+                        <span class="value">10.07.2015</span>
+                    </span>
+                </span>
+            </div>
+            <div class="button">
+                <span class="reviews">
+                    <span class="num">
+                        <a href="#"><b>138</b></a>
+                    </span>
+                    <span><b>Отзывы</b></span>
+                </span>
+                <span class="strip">|</span>
+                <span class="number">
+                    <span class="num">
+                        <a href="#"><b>100</b></a>
+                    </span>
+                    <span><b>Номеров</b></span>
+                </span>
+                <span class="strip">|</span>
+                <span class="icons">
+                    <img src="icons/food.png">
+                    <img src="icons/swim.png">
+                    <img src="icons/parking.png">
+                    <img src="icons/sport.png">
+                </span>
+                <span class="submit">
+                    <span>
+                        <b>100 000</b>
+                            <del>
+                                <span style="font-family: Arial; font-size: 12.0pt;">P</span>
+                            </del>
+                    </span>
+                    <button>Бронировать</button>
+                </span>
             </div>
         </div>
     </div>
+    <div style="clear: both"></div>
 </main>
 <footer>
     <div class="top">
@@ -195,10 +896,10 @@
         <span class="copyright">
                 © www.na-more.ru Все права защищены
         </span>
-        <span>
+        <form>
             <input class="search" type="text" value="Поиск по сайту">
-            <input class="button" type="submit" value="">
-        </span>
+            <input class="button" type="submit" name="submit" alt="search" value="">
+        </form>
     </div>
 </footer>
 </body>
