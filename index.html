@@ -59,16 +59,16 @@
     <aside class="left-side">
         <form class="sidebar">
             <div>
-                <span>Бюджет</span>
+                <span class="tit">Бюджет</span>
                 <input type="text" value="20000" name="price">
                 <span>руб.</span>
                 <span>Общая стоимость за период</span>
             </div>
             <div class="line"></div>
             <div>
-                <span>Параметры</span>
+                <span class="tit">Параметры</span>
                 <div>
-                    <div>Кол-во комнат:</div>
+                    <div class="tit_select">Кол-во комнат:</div>
                     <div>
                         <select>
                             <option value="1" selected="selected">1</option>
@@ -99,7 +99,7 @@
                     </div>
                 </div>
                 <div>
-                    <div>Кол-во гостей:</div>
+                    <div class="tit_select">Кол-во гостей:</div>
                     <div>
                         <select>
                             <option value="1" selected="selected">1</option>
@@ -110,18 +110,18 @@
                         </select>
                     </div>
                 </div>
-                <div>
+                <label>
                     <input type="checkbox" value="1" name="loggia">
-                    <span class="label">Балкон, лоджия</span>
-                </div>
+                    Балкон, лоджия
+                </label>
                 <div>
-                    <div>Дата заезда:</div>
+                    <div class="tit_select">Дата заезда:</div>
                     <select>
 
                     </select>
                 </div>
                 <div>
-                    <div>Дата выезда:</div>
+                    <div class="tit_select">Дата выезда:</div>
                     <select>
 
                     </select>
@@ -130,32 +130,38 @@
             <div class="line"></div>
             <div>
                 <div>
-                    <div>Услуги</div>
-                    <div>
+                    <div class="tit">Услуги</div>
+                    <label class="label">
                         <input type="checkbox" value="1">
-                        <span class="label">Питание</span>
-                    </div>
-                    <div>
+                        Питание
+                    </label>
+                    <br>
+                    <label class="label">
                         <input type="checkbox" value="1">
-                        <span class="label">Бассейн</span>
-                    </div>
-                    <div>
+                        Бассейн
+                    </label>
+                    <br>
+                    <label class="label">
                         <input type="checkbox" value="1">
-                        <span class="label">Cауна</span>
-                    </div>
-                    <div>
+                        Cауна
+                    </label>
+                    <br>
+                    <label class="label">
                         <input type="checkbox" value="1">
-                        <span class="label">Спорт</span>
-                    </div>
-                    <div>
+                        Спорт
+                    </label>
+                    <br>
+                    <label class="label">
                         <input type="checkbox" value="1">
-                        <span class="label">Детская площадка</span>
-                    </div>
-                    <label>
+                        Детская площадка
+                    </label>
+                    <br>
+                    <label class="label">
                         <input type="checkbox" value="1">
                         Автостоянка
                     </label>
-                    <label>
+                    <br>
+                    <label class="label">
                         <input type="checkbox" value="1">
                         Конференц-зал
                     </label>
@@ -163,39 +169,46 @@
             </div>
             <div class="line"></div>
             <div>
-                <div>Типы размещения </div>
-                <div>
+                <div class="tit">Типы размещения </div>
+                <label class="label">
                     <input type="checkbox" value="1">
-                    <span class="label">Санаторий</span>
-                </div>
-                <div>
+                    Санаторий
+                </label>
+                <br>
+                <label class="label">
                     <input type="checkbox" value="1">
-                    <span class="label">Пансионаты</span>
-                </div>
-                <div>
+                    Пансионаты
+                </label>
+                <br>
+                <label class="label">
                     <input type="checkbox" value="1">
-                    <span class="label">Дома отдыха</span>
-                </div>
-                <div>
+                    Дома отдыха
+                </label>
+                <br>
+                <label class="label">
                     <input type="checkbox" value="1">
-                    <span class="label">Гостинницы</span>
-                </div>
-                <div>
+                    Гостинницы
+                </label>
+                <br>
+                <label class="label">
                     <input type="checkbox" value="1">
-                    <span class="label">Котеджи</span>
-                </div>
-                <div>
+                    Котеджи
+                </label>
+                <br>
+                <label class="label">
                     <input type="checkbox" value="1">
-                    <span class="label">Кваритиры</span>
-                </div>
-                <div>
+                    Кваритиры
+                </label>
+                <br>
+                <label class="label">
                     <input type="checkbox" value="1">
-                    <span class="label">Кемпинги</span>
-                </div>
-                <div>
+                    Кемпинги
+                </label>
+                <br>
+                <label class="label">
                     <input type="checkbox" value="1">
-                    <span class="label">Яхты</span>
-                </div>
+                    Яхты
+                </label>
             </div>
             <div class="line"></div>
             <button>подобрать</button>
@@ -205,9 +218,9 @@
     </aside>
     <div class="content clearfix">
         <div>
-            <h2>
+            <h3>
                 Гостиницы, отели
-            </h2>
+            </h3>
             <span class="reg">
                 Упорядочить по:
             </span>
@@ -873,25 +886,27 @@
 </main>
 <footer>
     <div class="top">
-        <span class="logo">
-            <a href="#">
-                <img src="icons/na-more-footer.png">
-                <span>
-                        Осуществляются мечты
-                </span>
-            </a>
-        </span>
-        <span>
-	        <ul class="menu">
-	            <li class="active" type="active"><a href="#">Гостиницы</a></li>
-	            <li><a href="#">Рестораны</a></li>
-	            <li><a href="#">Салоны красоты</a></li>
-	            <li><a href="#">Аквапарки</a></li>
-	            <li><a href="#">Экскурсии</a></li>
-	            <li><a href="#">Ночные клубы</a></li>
-	            <li><a href="#">Такси</a></li>
-	        </ul>
-        </span>
+        <div class="logo_box">
+            <div class="logo">
+                <a href="#">
+                    <img src="icons/na-more-footer.png">
+                    <span>
+                            Осуществляются мечты
+                    </span>
+                </a>
+            </div>
+            <div>
+                <ul class="menu">
+                    <li class="active" type="active"><a href="#">Гостиницы</a></li>
+                    <li><a href="#">Рестораны</a></li>
+                    <li><a href="#">Салоны красоты</a></li>
+                    <li><a href="#">Аквапарки</a></li>
+                    <li><a href="#">Экскурсии</a></li>
+                    <li><a href="#">Ночные клубы</a></li>
+                    <li><a href="#">Такси</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
     <div class="bottom">
         <span class="copyright">
